@@ -67,7 +67,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="496,466" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="558,928" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="IntNumber" />
       <Variable x:TypeArguments="x:Int32" Name="GuessedNumber" />
@@ -82,20 +82,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="DoWhile_1">
+    <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="496,514" sap2010:WorkflowViewState.IdRef="DoWhile_1">
       <DoWhile.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="BooleanFalse" />
       </DoWhile.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <DoWhile.Condition>
         <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Not GuessedNumber = CorrectNumber" />
       </DoWhile.Condition>
-      <Sequence sap:VirtualizedContainerService.HintSize="450,442" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <Sequence sap:VirtualizedContainerService.HintSize="450,350" sap2010:WorkflowViewState.IdRef="Sequence_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -113,124 +113,10 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:InputDialog>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-          <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="670,1713" sap2010:WorkflowViewState.IdRef="Sequence_10">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[GuessedNumber = IntNumber]" sap:VirtualizedContainerService.HintSize="608,1602" sap2010:WorkflowViewState.IdRef="If_5">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="476,262" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:Boolean" Name="BooleanGuess" />
-                    </Sequence.Variables>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Yeey, you guessed right! It was &quot; + GuessedNumber.ToString]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:MessageBox>
-                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:Boolean">[BooleanGuess]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </If.Then>
-                <If.Else>
-                  <Sequence sap:VirtualizedContainerService.HintSize="574,1158" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,758" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="472,639" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[GuessedNumber &gt; IntNumber]" sap:VirtualizedContainerService.HintSize="410,528" sap2010:WorkflowViewState.IdRef="If_6">
-                            <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="376,173" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Try guessing again with lower numbers&quot;]" />
-                              </Sequence>
-                            </If.Then>
-                            <If.Else>
-                              <Sequence sap:VirtualizedContainerService.HintSize="376,173" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Try again with higher numbers&quot;]" />
-                              </Sequence>
-                            </If.Else>
-                          </If>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                    </ui:CommentOut>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,272" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Boolean">[BooleanFalse]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Object">[False]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                    </ui:CommentOut>
-                  </Sequence>
-                </If.Else>
-              </If>
-            </Sequence>
-          </ui:CommentOut.Body>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:CommentOut>
       </Sequence>
     </DoWhile>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Yeey, you guessed right&quot; + GuessedNumber.ToString]" />
-    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="496,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Yeey, you guessed right&quot; + GuessedNumber.ToString]" />
+    <Assign sap:VirtualizedContainerService.HintSize="496,82" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[IntNumber]</OutArgument>
       </Assign.To>
